@@ -16,109 +16,135 @@
   </head>
   <body>
     <!--_______________ Шапка_______________ -->
-    <header>
-      <nav>
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="list">
-          <li><a class="link" href="">Студия</a></li>
-          <li><a class="link current" href="">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <address>
-        <a class="contacts" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="contacts" href="call:+380961111111">+38 096 111 11 11</a>
-      </address>
+    <!-- <li><a class="link current" href="">Портфолио</a></li> -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="header-list">
+            <li><a class="link" href="">Студия</a></li>
+            <li><a class="link current" href="./index2.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <a class="contacts" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="contacts" href="call:+380961111111">+38 096 111 11 11</a>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Портфолио -->
       <section class="portfolio">
         <!-- <h1>Портфолио</h1> -->
         <!-- Кнопки -->
-        <div>
-          <ul>
-            <li><button class="gray-button" type="button">Все</button></li>
-            <li>
-              <button class="gray-button" type="button">Веб-сайты</button>
-            </li>
-            <li>
-              <button class="gray-button" type="button">Приложения</button>
-            </li>
-            <li><button class="gray-button" type="button">Дизайн</button></li>
-            <li>
-              <button class="gray-button" type="button">Маркетинг</button>
-            </li>
-          </ul>
-        </div>
-        <!-- Примеры работ -->
-        <div>
-          <ul>
-            <li>
-              <a href=""
-                ><img src="./images/example_1.jpg" alt="Страница веб-сайта" />
-                <h2>Технокряк</h2>
-                <p>Веб-сайт</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_2.jpg" alt="Постер-обложка" />
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_3.jpg" alt="Логотип ресторана" />
-                <h2>Ресторан Seafood</h2>
-                <p>Приложение</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_4.jpg" alt="Наушники" />
-                <h2>Проект Prime</h2>
-                <p>Маркетинг</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_5.jpg" alt="Макет коробки" />
-                <h2>Проект Boxes</h2>
-                <p>Приложение</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_6.jpg" alt="Дизайн веб-страницы" />
-                <h2>Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_7.jpg" alt="Дизайн книги" />
-                <h2>Издание Limited Edition</h2>
-                <p>Дизайн</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_8.jpg" alt="Бирка" />
-                <h2>Проект LAB</h2>
-                <p>Маркетинг</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/example_9.jpg" alt="Веб-приложение" />
-                <h2>Growing Business</h2>
-                <p>Приложение</p>
-              </a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="gray-button-container">
+            <ul>
+              <li><button class="gray-button" type="button">Все</button></li>
+              <li>
+                <button class="gray-button" type="button">Веб-сайты</button>
+              </li>
+              <li>
+                <button class="gray-button" type="button">Приложения</button>
+              </li>
+              <li><button class="gray-button" type="button">Дизайн</button></li>
+              <li>
+                <button class="gray-button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+          <!-- Примеры работ -->
+          <div class="portfolio-list-container">
+            <ul>
+              <li>
+                <a href=""
+                  ><img src="./images/example_1.jpg" alt="Страница веб-сайта" />
+                  <div class="portfolio-describtion">
+                    <h2>Технокряк</h2>
+                    <p>Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_2.jpg" alt="Постер-обложка" />
+                  <div class="portfolio-describtion">
+                    <h2>Постер New Orlean vs Golden Star</h2>
+                    <p>Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_3.jpg" alt="Логотип ресторана" />
+                  <div class="portfolio-describtion">
+                    <h2>Ресторан Seafood</h2>
+                    <p>Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_4.jpg" alt="Наушники" />
+                  <div class="portfolio-describtion">
+                    <h2>Проект Prime</h2>
+                    <p>Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_5.jpg" alt="Макет коробки" />
+                  <div class="portfolio-describtion">
+                    <h2>Проект Boxes</h2>
+                    <p>Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./images/example_6.jpg"
+                    alt="Дизайн веб-страницы"
+                  />
+                  <div class="portfolio-describtion">
+                    <h2>Inspiration has no Borders</h2>
+                    <p>Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_7.jpg" alt="Дизайн книги" />
+                  <div class="portfolio-describtion">
+                    <h2>Издание Limited Edition</h2>
+                    <p>Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_8.jpg" alt="Бирка" />
+                  <div class="portfolio-describtion">
+                    <h2>Проект LAB</h2>
+                    <p>Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/example_9.jpg" alt="Веб-приложение" />
+                  <div class="portfolio-describtion">
+                    <h2>Growing Business</h2>
+                    <p>Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

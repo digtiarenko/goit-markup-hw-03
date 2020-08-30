@@ -9,6 +9,11 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 ul {
   list-style-type: none;
@@ -223,14 +228,22 @@ input[type="radio"].visually-hidden {
 }
 
 /*  ______________Кнопки_______________________ */
-
+.portfolio .container {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .portfolio .gray-button {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: #f5f4fa;
 }
 .gray-button:hover {
   color: #ffffff;
@@ -242,12 +255,19 @@ input[type="radio"].visually-hidden {
 }
 
 /* __________________Примеры работ_________________ */
+.portfolio-list-container a {
+  text-decoration: none;
+  display: inline-block;
+}
 .portfolio h2 {
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .portfolio p {
   color: var(--secondary-text-color);
@@ -255,4 +275,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
