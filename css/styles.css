@@ -88,9 +88,6 @@ input[type="radio"].visually-hidden {
 .contacts:focus {
   color: var(--accent-text-color);
 }
-.page-header {
-  background-color: rgb(104, 86, 86);
-}
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -139,7 +136,7 @@ input[type="radio"].visually-hidden {
 
 .our-benefits {
   padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 .our-benefits h3 {
   color: var(--primary-text-color);
@@ -168,15 +165,22 @@ input[type="radio"].visually-hidden {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* ________________________Наша команда__________________ */
+.our-team {
+  padding-top: 94px;
+}
 .our-team h4 {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .our-team p {
   color: var(--secondary-text-color);
@@ -184,15 +188,21 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* _________________Футер________________________ */
 /* Что бы видно было белый текст */
 .footer {
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .footer .logo {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer p {
   color: #ffffff;
@@ -202,6 +212,8 @@ input[type="radio"].visually-hidden {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: #2f303a;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 /* ____________СТРАНИЦА ПОРТФОЛИО__________________
