@@ -12,6 +12,26 @@ body {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* __________________ Логотип ___________________ */
@@ -23,6 +43,9 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  margin-right: 93px;
+  display: inline-block;
 }
 .logo > span {
   color: var(--accent-text-color);
@@ -52,6 +75,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-block;
+
+  margin-right: 50px;
+}
+.contacts:last-child {
+  margin-right: 0;
 }
 .contacts:hover {
   color: var(--accent-text-color);
@@ -59,20 +88,43 @@ ul {
 .contacts:focus {
   color: var(--accent-text-color);
 }
+.page-header {
+  background-color: rgb(104, 86, 86);
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 
 /* ___________________ Главная секция________________ */
-h1 {
+.hero-container {
+  /* Что бы видно было белый текст */
+  background-color: #2f303a;
+  outline: 2px solid tomato;
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* Что бы видно было белый текст */
-  background-color: #2f303a;
 }
 .blue-button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: #ffffff;
   font-size: 16px;
   line-height: 1.87;
@@ -80,9 +132,15 @@ h1 {
   background-color: var(--accent-text-color);
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 /*________________ Наши преимущества________________*/
+
+.our-benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .our-benefits h3 {
   color: var(--primary-text-color);
   font-weight: bold;
@@ -90,12 +148,16 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .our-benefits p {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*  __________________Чем мы занимаемся ____________ */
@@ -126,13 +188,13 @@ h1 {
 
 /* _________________Футер________________________ */
 /* Что бы видно было белый текст */
-footer {
+.footer {
   background-color: #2f303a;
 }
-footer .logo {
+.footer .logo {
   color: #ffffff;
 }
-footer p {
+.footer p {
   color: #ffffff;
   font-weight: normal;
   font-style: normal;
@@ -142,7 +204,7 @@ footer p {
   background-color: #2f303a;
 }
 
-/* ____________СТРАНИЦА ПОРТФОЛИО______________________
+/* ____________СТРАНИЦА ПОРТФОЛИО__________________
 /* ____________Эффект текущей страницы_____________ */
 .link.current {
   color: var(--accent-text-color);
