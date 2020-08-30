@@ -50,14 +50,42 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 
   margin-right: 93px;
-  display: inline-block;
+  display: block;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 .logo > span {
   color: var(--accent-text-color);
 }
 
 /* ________________ Навигация в шапке ____________*/
+.header-list {
+  display: flex;
+}
+.header-list > li:not(last-child) {
+  margin-right: 50px;
+}
+.header-address {
+  display: flex;
+  margin-left: auto;
+}
+.header-address .contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.container.header {
+  display: flex;
+  text-align: center;
+}
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -80,7 +108,7 @@ input[type="radio"].visually-hidden {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 
   margin-right: 50px;
 }
