@@ -81,6 +81,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   text-align: center;
 }
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .link {
   display: block;
   padding-top: 32px;
@@ -127,15 +130,16 @@ input[type="radio"].visually-hidden {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* ___________________ Главная секция________________ */
 .hero-container {
   /* Что бы видно было белый текст */
   background-color: #2f303a;
-  outline: 2px solid tomato;
   text-align: center;
+  height: 600px;
+  padding-top: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -171,6 +175,17 @@ input[type="radio"].visually-hidden {
   padding-top: 94px;
   /* padding-bottom: 94px; */
 }
+.our-benefits-list {
+  display: flex;
+}
+
+.our-benefits-item {
+  width: 270px;
+}
+.our-benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .our-benefits h3 {
   color: var(--primary-text-color);
   font-weight: bold;
@@ -191,6 +206,13 @@ input[type="radio"].visually-hidden {
 }
 
 /*  __________________Чем мы занимаемся ____________ */
+
+.what-we-do-list {
+  display: flex;
+}
+.what-we-do-list li:not(:last-child) {
+  margin-right: 30px;
+}
 .our-team h2 {
   color: var(--primary-text-color);
   font-weight: bold;
@@ -206,6 +228,20 @@ input[type="radio"].visually-hidden {
 .our-team {
   padding-top: 94px;
 }
+.our-team-list {
+  display: flex;
+}
+.our-team-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team-list li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .our-team h4 {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -246,6 +282,9 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.03em;
   background-color: #2f303a;
   margin-top: 9px;
+  margin-bottom: 9px;
+}
+.footer .contacts {
   margin-bottom: 9px;
 }
 
