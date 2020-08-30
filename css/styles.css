@@ -295,6 +295,14 @@ input[type="radio"].visually-hidden {
 }
 
 /*  ______________Кнопки_______________________ */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-list li:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio .container {
   margin-top: 94px;
   margin-bottom: 50px;
@@ -312,6 +320,7 @@ input[type="radio"].visually-hidden {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
 }
+
 .gray-button:hover {
   color: #ffffff;
   background-color: var(--accent-text-color);
@@ -322,7 +331,27 @@ input[type="radio"].visually-hidden {
 }
 
 /* __________________Примеры работ_________________ */
-.portfolio-list-container a {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-describtion {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.portfolio-list li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-list li:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-list li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-list a {
   text-decoration: none;
   display: inline-block;
 }
