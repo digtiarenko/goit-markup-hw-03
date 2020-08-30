@@ -1,0 +1,184 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+}
+
+/* ______________Общее форматирование_____________ */
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* __________________ Логотип ___________________ */
+.logo {
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo > span {
+  color: var(--accent-text-color);
+}
+
+/* ________________ Навигация в шапке ____________*/
+.link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--accent-text-color);
+}
+.link:focus {
+  color: var(--accent-text-color);
+}
+.contacts {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts:hover {
+  color: var(--accent-text-color);
+}
+.contacts:focus {
+  color: var(--accent-text-color);
+}
+
+/* ___________________ Главная секция________________ */
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  /* Что бы видно было белый текст */
+  background-color: #2f303a;
+}
+.blue-button {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-text-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*________________ Наши преимущества________________*/
+.our-benefits h3 {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.our-benefits p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/*  __________________Чем мы занимаемся ____________ */
+.our-team h2 {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ________________________Наша команда__________________ */
+.our-team h4 {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.our-team p {
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* _________________Футер________________________ */
+/* Что бы видно было белый текст */
+footer {
+  background-color: #2f303a;
+}
+footer .logo {
+  color: #ffffff;
+}
+footer p {
+  color: #ffffff;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+}
+
+/* ____________СТРАНИЦА ПОРТФОЛИО______________________
+/* ____________Эффект текущей страницы_____________ */
+.link.current {
+  color: var(--accent-text-color);
+}
+
+/*  ______________Кнопки_______________________ */
+
+.portfolio .gray-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.gray-button:hover {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+.gray-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+/* __________________Примеры работ_________________ */
+.portfolio h2 {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio p {
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
